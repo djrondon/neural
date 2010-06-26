@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>Neural</title>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load('jquery', '1.4.2');
+    </script>
+    <script type="text/javascript" src="queue.js"></script>
+    <script type="text/javascript" src="color.js"></script>
+    <script type="text/javascript" src="array.js"></script>
+    <script type="text/javascript" src="neural.js"></script>
+    <script type="text/javascript" src="neural-drawable.js"></script>
+    <script type="text/javascript" src="processing.js"></script>
+    <script type="text/javascript" src="neural-main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Neural</h1>
+      <dl id="status" class="clearfix">
+        <dt id="neuron-count">neurons:</dt>
+        <dd>0</dd>
+        <dt id="frame-rate">attempted frame rate:</dt>
+        <dd>0</dd>
+        <dt id="frame-count">frame count:</dt>
+        <dd>0</dd>
+        <dt id="entropy">entropy:</dt>
+        <dd>0</dd>
+      </dl>
+    </header>
+    <div class="clear">
+    </div>
+    <div class="left-column">
+      <canvas id="main-canvas"></canvas>
+    </div>
+    <aside class="right-column">
+      <div id="entropy-wrapper">
+        <h2>Entropy</h2>
+        <canvas id="entropy-canvas"></canvas>
+      </div>
+      <div id="potentials-wrapper">
+        <h2>Potentials</h2>
+        <canvas id="potentials-canvas"></canvas>
+      </div>
+    </aside>
+  </body>
+</html>
